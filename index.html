@@ -1,75 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Confirmação de Presença - Kel 40 anos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirmação de Presença</title>
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html, body {
+    html,
+    body {
       margin: 0;
+      padding: 0;
       min-height: 100%;
-      background: #f8f1e7;
-      display: grid;
-      place-items: center;
-      font-family: Arial, sans-serif;
+      background: #ffffff;
     }
 
     .convite {
       position: relative;
-      width: min(100vw, 864px);
-      aspect-ratio: 864 / 1224;
+      width: 100%;
+      max-width: 1054px;
+      margin: 0 auto;
       line-height: 0;
     }
 
     .convite img {
+      display: block;
       width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;
-      user-select: none;
-      -webkit-user-drag: none;
+      height: auto;
     }
 
-    /* Área invisível posicionada sobre o botão original da imagem */
-    .botao-confirmar {
+    .botao-whatsapp {
       position: absolute;
-      left: 66.1%;
-      top: 84.4%;
-      width: 27.8%;
-      height: 8.9%;
+      left: 37.2%;
+      top: 61.2%;
+      width: 45.6%;
+      height: 17.8%;
       display: block;
-      border-radius: 12px;
       cursor: pointer;
-      text-indent: -9999px;
-      overflow: hidden;
+      text-decoration: none;
       background: transparent;
-      border: 0;
-      padding: 0;
-      z-index: 2;
-    }
-
-    .botao-confirmar:focus-visible {
-      outline: 3px solid #ffffff;
-      outline-offset: 3px;
-      box-shadow: 0 0 0 6px #123c7c;
+      border-radius: 18px;
     }
   </style>
 </head>
 <body>
-  <main class="convite" aria-label="Convite de aniversário de 40 anos da Kel">
-    <img src="convite-referencia.png" alt="Convite de aniversário de 40 anos da Kel" />
+  <main class="convite">
+    <img src="convite-referencia.jpeg" alt="Convite de aniversário da Kel" />
 
     <a
-      class="botao-confirmar"
-      href="https://api.whatsapp.com/send?phone=5533984068666&text=Ol%C3%A1%21%20Confirmo%20minha%20presen%C3%A7a%20no%20anivers%C3%A1rio%20da%20Kel!%0A%0AMeu%20nome%3A%20%0AQuantidade%20de%20pessoas%3A%20"
+      class="botao-whatsapp"
+      href="https://api.whatsapp.com/send?phone=5533984068666&text=Oi%2C%20Kel%21%20Confirmo%20minha%20presen%C3%A7a%20no%20seu%20anivers%C3%A1rio%21"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Clique aqui e confirme sua presença pelo WhatsApp"
-    >
-      Clique aqui e confirme sua presença pelo WhatsApp
-    </a>
+      aria-label="Confirmar presença pelo WhatsApp"
+    ></a>
   </main>
 </body>
 </html>
